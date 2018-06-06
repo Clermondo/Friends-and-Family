@@ -1,0 +1,22 @@
+<div class="login">
+	<div class="background">
+		<div class="container">
+			<div class="form-wrap">
+				<div class="forms">
+
+					<p class="login-heading">Login</p>
+
+					<%= form_for(:session, url: login_path) do |f| %>
+					<p>
+						<%= f.email_field :email, :placeholder => "Email" %>
+					</p>
+					<p>
+						<%= f.password_field :password, :placeholder => "Password" %>
+					</p>
+					<%= f.submit "Log in", class: "btn-submit" %>
+					<% end %>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

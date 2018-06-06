@@ -1,0 +1,27 @@
+<div class="su-background">
+  <div class="container">
+  <div class="form-wrap2">
+<div class="form">
+      <h1 class="login-heading">Sign up</h1>
+      <%= form_for(@user) do |f| %>
+    	 <div class="signup-blocks">
+         <%= f.text_field :first_name, :placeholder => "First name" %>
+       </div>
+       <div class="signup-blocks">
+         <%= f.text_field :last_name, :placeholder => "Last name"%>
+       </div>
+       <div class="signup-blocks"s>
+         <%= f.text_field :email, :placeholder => "Email" %>
+       </div>
+       <div class="signup-blocks">
+         <%= f.password_field :password, :placeholder => "Password" %>
+       </div>
+			 <br>
+    	 <div class="btn-submit">
+          <%= f.submit "Sign up", class: "btn-submit" %>
+   		 </div>
+     <% end %>
+</div>
+</div>
+</div>
+</div>
